@@ -29,7 +29,7 @@ jobs:
        sudo -s
        sudo yum install docker -y
        sudo service docker start
-       sudo docker build -t gta1 .
-       sudo docker run -itd --name c3 -p 5003:5001 gta1 
+       sudo docker build -t gta2 .
+       sudo docker run -itd --name c4 -p 5004:5000 gta2 
 
        #sudo nohup python a.py > /dev/null 2>&1 &
