@@ -27,9 +27,9 @@ jobs:
        pwd
        who
        sudo -s
-       yum install docker -y
-       service docker start
-       docker build -t gta .
-       docker run -itd --name c1 -p 5000:5000 gta 
+       sudo yum install docker -y
+       sudo service docker start
+       sudo docker build -t gta .
+       sudo docker run -itd --name c1 -p 5000:5000 gta 
 
        #sudo nohup python a.py > /dev/null 2>&1 &
