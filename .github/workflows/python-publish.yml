@@ -20,3 +20,14 @@ jobs:
         python3 -m pip install --upgrade pip
         pip3 install flask  # Install Flask module
         #pip install pytest  # Install pytest
+        
+
+    - name: Deploy application
+      run: |
+       
+       pwd
+       sudo yum install docker -y
+       sudo service docker start
+       sudo docker build -t gta .
+       sudo docker run -itd --name c1 -p 5000:5000 gta 
+
