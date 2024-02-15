@@ -19,7 +19,6 @@ jobs:
 
     - name: Deploy application
       run: |
-       
        pwd
        sudo yum install docker -y
        sudo service docker start
